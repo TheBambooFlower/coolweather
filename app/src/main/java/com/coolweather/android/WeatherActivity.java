@@ -216,6 +216,7 @@ public class WeatherActivity extends AppCompatActivity {
         String sport = "运动建议" + weather.suggestion.sport.info;
         comfortText.setText( comfort );
         carWashText.setText( carWash );
+        sportText.setText( sport );
         weatherLayout.setVisibility( View.VISIBLE );
         Intent intent  = new Intent( this, AutoUpdateService.class );
         startService( intent );
